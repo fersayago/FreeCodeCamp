@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>FCC Survey form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Encuesta sobre aprendizaje</h1>
+            <p id="description" class="description text-center">Gracias por tomarte el tiempo para completar esta encuesta</p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Nombre</label>
+                <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    class="form-control"
+                    placeholder="Escriba su nombre"
+                    required
+                />
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Correo electronico</label>
+                <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="form-control"
+                    placeholder="Escriba su correo electronico"
+                    required
+                />
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">Edad<span class="clue">(Opcional)</span></label>
+                <input
+                    type="number"
+                    name="age"
+                    id="number"
+                    min="5"
+                    max="150"
+                    class="form-control"
+                    placeholder="Edad"
+                />
+            </div>
+            <div class="form-group">
+                <p>¿Qué opción de las siguientes describe mejor tu situación actual?</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                    <option disabled selected value>Elegir rol actual</option>
+                    <option value="student">Estudiante</option>
+                    <option value="job">Trabajo tiempo completo</option>
+                    <option value="partJob">Trabajo media jornada</option>
+                    <option value="learner">Aprendiz tiempo completo</option>
+                    <option value="preferNo">Prefiero no decirlo</option>
+                    <option value="other">Otro</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>¿Recomendarias FreeCodeCamp a un amigo?</p>
+                <label>
+                    <input
+                        name="user-recommend"
+                        value="definitely"
+                        type="radio"
+                        class="input-radio"
+                        checked
+                    />Totalmente
+                </label>
+                <label>
+                    <input
+                        name="user-recommend"
+                        value="maybe"
+                        type="radio"
+                        class="input-radio"
+                    />Puede ser
+                </label>
+                <label>
+                    <input
+                        name="user-recommend"
+                        value="not-sure"
+                        type="radio"
+                        class="input-radio"
+                    />No estoy seguro
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p>¿Cual es tu feature preferido de FreeCodeCamp?</p>
+                <select id="most-like" name="mostLike" class="form-control" required>
+                    <option disabled selected value> Elija una opción</option>
+                    <option value="challenges">Desafios</option>
+                    <option value="projects">Proyectos</option>
+                    <option value="community">Comunidad</option>
+                    <option value="openSource">Codigo abierto</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>
+                    ¿Qué mejoras te gustaria ver?
+                    <span class="clue">(Se pueden marcar varias respuestas)</span>
+                </p>
+
+                <label>
+                    <input
+                        name="prefer"
+                        value="frot-end-projects"
+                        type="checkbox"
+                        class="input-checkbox"
+                    />Proyectos front-end
+                </label>
+
+                <label>
+                    <input
+                        name="prefer"
+                        value="back-end-projects"
+                        type="checkbox"
+                        class="input-checkbox"
+                    />Proyectos back-end
+                </label>
+
+                <label>
+                    <input
+                        name="prefer"
+                        value="data-visualization"
+                        type="checkbox"
+                        class="input-checkbox"
+                    />Data Visualization
+                </label>
+
+                <label>
+                    <input
+                        name="prefer"
+                        value="challenges"
+                        type="checkbox"
+                        class="input-checkbox"
+                    />Desafios
+                </label>
+
+                <label>
+                    <input
+                        name="prefer"
+                        value="open-source-community"
+                        type="checkbox"
+                        class="input-checkbox"
+                    />Comunidad open-source
+                </label>
+
+                <label>
+                    <input
+                        name="prefer"
+                        value="gitter-help-rooms"
+                        type="checkbox"
+                        class="input-checkbox"
+                    />Ayudas de la comunidad
+                </label>
+
+                <label>
+                    <input
+                        name="prefer"
+                        value="videos"
+                        type="checkbox"
+                        class="input-checkbox"
+                    />Videos
+                </label>
+
+                <label>
+                    <input
+                        name="prefer"
+                        value="city-meetups"
+                        type="checkbox"
+                        class="input-checkbox"
+                    />Meet-ups locales
+                </label>
+
+                <label>
+                    <input
+                        name="prefer"
+                        value="wiki"
+                        type="checkbox"
+                        class="input-checkbox"
+                    />Wiki
+                </label>
+
+                <label>
+                    <input
+                        name="prefer"
+                        value="forum"
+                        type="checkbox"
+                        class="input-checkbox"
+                    />Foros
+                </label>
+
+                <label>
+                    <input
+                        name="prefer"
+                        value="additional-courses"
+                        type="checkbox"
+                        class="input-checkbox"
+                    />Cursos adicionales
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p>¿Algún comentario o sugerencia?</p>
+                <textarea
+                    id="comments"
+                    class="input-textarea"
+                    name="comment"
+                    placeholder="Introduzca su comentario aquí..."
+                ></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+                    Enviar
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
