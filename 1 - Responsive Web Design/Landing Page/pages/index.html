@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Stradivarius</title>
 </head>
 
 <body translate="no">
     <div id="page-wrapper">
         <header id="header">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav-bar">
                 <a class="navbar-brand" href="#">
                     <img src="../img/logo.png" height="50" alt="Stradivarius logo" loading="lazy" id="header-img">
                 </a>
@@ -24,7 +25,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="#header">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#features">Features</a>
@@ -43,13 +44,16 @@
 
         <section id="header">
             <h2>Handcrafted, home-made masterpieces</h2>
-            <form action="https://www.freecodecamp.com/email-submit" id="form"></form>
-            <input name="email" id="email" type="email" placeholder="Enter your email address">
-            <input id="submit" type="submit" value="Get Started" class="btn">
+            <form action="https://www.freecodecamp.com/email-submit" id="form">
+                <input name="email" id="email" type="email" placeholder="Enter your email address">
+                <input id="submit" type="submit" value="Get Started" class="btn">
+            </form>
         </section>
 
 
         <div class="container">
+
+
             <section id="features"></section>
             <div class="grid">
                 <div class="icon">
@@ -57,7 +61,8 @@
                 </div>
                 <div class="desc">
                     <h2>Premium materials</h2>
-                    <p>Our violins use the best wood available on market. This will increase the longevity of your purchase</p>
+                    <p>Our violins use the best wood available on market. This will increase the longevity of your
+                        purchase</p>
                 </div>
             </div>
             <div class="grid">
@@ -66,7 +71,8 @@
                 </div>
                 <div class="desc">
                     <h2>Fast Shipping</h2>
-                    <p>We make sure you receive your violin as soon as we have finshed making it. We also provide free returns if you are not satisfied</p>
+                    <p>We make sure you receive your violin as soon as we have finshed making it. We also provide free
+                        returns if you are not satisfied</p>
                 </div>
             </div>
             <div class="grid">
@@ -75,11 +81,55 @@
                 </div>
                 <div class="desc">
                     <h2>Quality Assurance</h2>
-                    <p>For ever purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument</p>
+                    <p>For ever purchase you make, we will ensure there are no damages or faults and we will check and
+                        test the pitch of your instrument</p>
                 </div>
             </div>
-            <section id="how-it-works"></section>
-            <section id="pricing"></section>
+
+
+            <section id="how-it-works">
+                <iframe src="https://www.youtube-nocookie.com/embed/P1-SSDvyPMU" frameborder="0" id="video"
+                    allowfullscreen></iframe>
+            </section>
+
+
+            <section id="pricing">
+                <div class="product" id="Gould">
+                    <div class="level">Gould violin</div>
+                    <h2>$1200</h2>
+                    <ol>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum dolor.</li>
+                        <li>Lorem ipsum.</li>
+                    </ol>
+                    <button class="btn">Select</button>
+                </div>
+                <div class="product" id="Francesca">
+                    <div class="level">Francesca violin</div>
+                    <h2>$2500</h2>
+                    <ol>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum dolor.</li>
+                        <li>Lorem ipsum.</li>
+                    </ol>
+                    <button class="btn">Select</button>
+                </div>
+                <div class="product">
+                    <div class="level" id="Antonius">Antonius violin</div>
+                    <h2>$4900</h2>
+                    <ol>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum dolor.</li>
+                        <li>Lorem ipsum.</li>
+                    </ol>
+                    <button class="btn">Select</button>
+                </div>
+
+            </section>
+
         </div>
 
     </div>
