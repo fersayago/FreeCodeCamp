@@ -135,8 +135,8 @@ nav > ul {
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 200px;
-  margin-top: 50px;
+  height: 400px;
+  padding-top: 200px;
 }
 
 #hero > h2 {
