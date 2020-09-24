@@ -39,15 +39,6 @@
             <li>
                 <a href="#If...else_statement" class="class-link">If...else statement</a>
             </li>
-            <li>
-                <a href="#While_statement" class="class-link">While statement</a>
-            </li>
-            <li>
-                <a href="#Function_declarations" class="clas-link">Function declarations</a>
-            </li>
-            <li>
-                <a href="#Reference" class="class-link">Reference</a>
-            </li>
         </ul>
     </nav>
 
@@ -133,38 +124,46 @@
 
         <section class="main-section" id="Variables">
             <header>Variables assignment</header>
-            Think of a variable as a name attached to a particular object. In Python, variables need not be declared or
-            defined in advance,
-            as is the case in many other programming languages. To create a variable, you just assign it a value and
-            then start using it.
-            Assignment is done with a single equals sign (=):
+            <p>
+                Think of a variable as a name attached to a particular object. In Python, variables need not be declared or
+                defined in advance,
+                as is the case in many other programming languages. To create a variable, you just assign it a value and
+                then start using it.
+                Assignment is done with a single equals sign (=):
+            </p>
             <code>>>> n = 300</code>
-            This is read or interpreted as “n is assigned the value 300.” Once this is done, n can be used in a
-            statement or expression,
-            and its value will be substituted:
+            <p>
+                This is read or interpreted as “n is assigned the value 300.” Once this is done, n can be used in a
+                statement or expression,
+                and its value will be substituted:
+            </p>
             <code>>>> print(n) 
 300
             </code>
-            Just as a literal value can be displayed directly from the interpreter prompt in a REPL session without the
-            need for print(),
-            so can a variable:
+            <p>
+                Just as a literal value can be displayed directly from the interpreter prompt in a REPL session without the
+                need for print(),
+                so can a variable:
+            </p>
             <code>>>> n
 300
             </code>
-            Later, if you change the value of n and use it again, the new value will be substituted instead:
+            <p>Later, if you change the value of n and use it again, the new value will be substituted instead:</p>
             <code>>>> n = 1000
 >>> print(n)
 1000
 >>> n
 1000
             </code>
-            Python also allows chained assignment, which makes it possible to assign the same value to several variables
-            simultaneously:
+            <p>
+                Python also allows chained assignment, which makes it possible to assign the same value to several variables
+                simultaneously:
+            </p>
             <code>>>> a = b = c = 300
 >>> print(a, b, c)
 300 300 300
             </code>
-            The chained assignment above assigns 300 to the variables a, b, and c simultaneously.
+            <p>The chained assignment above assigns 300 to the variables a, b, and c simultaneously.</p>
         </section>
 
         <section class="main-section" id="Variable_types">
@@ -190,6 +189,41 @@ Now I'm a string
 
         <section class="main-section" id="Data_type">
             <header>Data type</header>
+            <p>
+                Now you know how to interact with the Python interpreter and execute Python code. It’s time to dig into the Python language.
+                First up is a discussion of the basic data types that are built into Python. These are the data types available on Python:
+            </p>
+            <ul>
+                <li>
+                    Integers
+                </li>
+                <li>
+                    Floating-point numbers
+                </li>
+                <il>
+                    Complex numbers
+                </li>
+                <li>
+                    Strings
+                </li>
+                <li>
+                    Boolean type, boolean context and "truthiness"
+                </li>
+                <li>
+                    Built-in functions
+                </li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="If...else_statement">
+            <header>If...else statement</header>
+                <p>If you have only one statement to execute, one for if, and one for else, you can put it all on the same line:</p>
+            <code>>>> a = 2
+>>> b = 330
+>>> print("A") if a > b else print("B")
+B
+            </code>
+            <p>You can also have multiple else statements on the same line</p>
         </section>
     </main>
 
